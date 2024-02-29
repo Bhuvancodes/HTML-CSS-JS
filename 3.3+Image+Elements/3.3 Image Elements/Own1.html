@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Special Page</title>
+    <style>
+        /* CSS to increase button size */
+        #myButton {
+            font-size: 36px; /* Adjust the font size as needed */
+            padding: 10px 20px; /* Adjust padding for button size */
+        }
+
+        /* CSS to increase heart symbol size */
+        #myButton::before {
+            font-size: 36px; /* Adjust the font size as needed */
+        }
+    </style>
+</head>
+<body>
+    <h1 style="color: rgb(255, 0, 64);">Happy Valentines Day</h1>
+    <button style="color: red;" id="myButton" onclick="changeContent()">&#10084;</button>
+
+    <script>
+        function changeContent() {
+            var button = document.getElementById("myButton");
+            button.innerHTML = "<img src='https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExNGtoMzR1aTl0YWZ5Mndxc3oxZG1peWJydTlrbTNkYzZhZDR0N285aCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/OkbYYldmZpl1tSA7Pz/giphy.gif' alt='Boy Proposing Girl'>";
+        }
+    </script>
+</body>
+</html>
